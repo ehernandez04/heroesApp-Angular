@@ -18,12 +18,12 @@ const routes: Routes = [
       { path: 'list', component: ListPageComponent },
       { path: ':id', component: HeroPageComponent },
       { path: '**', redirectTo: 'list' },
-    ]
-  }
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HeroesRoutingModule { }
+export class HeroesRoutingModule {}
